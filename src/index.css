@@ -62,7 +62,7 @@ h1 {
 }
 
 p {
-  max-width: 480px;
+  max-width: 440px;
   color: var(--white);
   text-align: center;
   font-size: max(0.8rem, 1.2vw);
