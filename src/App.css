@@ -1,42 +1,81 @@
 #root {
-  max-width: 1280px;
+  min-width: 100vw;
+}
+
+.App  {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 30px 40px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  align-self: flex-start;
+  height: max(1.65rem, 3.2vw); 
+  margin-bottom: 2.6rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero {
+  width: clamp(16rem, 52vw, 42rem);
+  /* width: min(80vw, 500px); */
+  margin-bottom: 2.8rem;
+}
+
+.btn-register {
+  font-size: 0.8rem;
+  background-color: var(--white);
+  padding: 8px 60px;
+  border-radius: 50px;
+  color: var(--purple-700);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: var(--magenta-400);
+  color: var(--white);
+}
+
+.icon {
+  border: 1.2px solid var(--white);
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.icon:hover {
+  border-color: var(--magenta-400);
+  color: var(--magenta-400);
+}
+
+@media (min-width: 678px) and (max-width: 1090px) {
+  .hero {
+    align-self: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 769px) {
+  .App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 60px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .logo {
+    margin: 0;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .hero {
+    margin: 0;
+    align-self: start;
+  }
 
-.read-the-docs {
-  color: #888;
+  .btn-register {
+    padding: 10px 45px;
+  }
 }
