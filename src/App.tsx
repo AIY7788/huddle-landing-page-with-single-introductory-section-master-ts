@@ -8,6 +8,7 @@ function App() {
 
         <main>
           <img
+            className="hero"
             src="/images/illustration-mockups.svg"
             alt="Illustration Mockups"
           />
@@ -19,24 +20,23 @@ function App() {
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
-
             <a href="#register" className="btn-register">
               Register
             </a>
           </section>
-
-          <footer>
-            <a href="#" className="icon">
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" className="icon">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" className="icon">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </footer>
         </main>
+
+        <footer>
+          <a href="#" className="icon">
+            <i className="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" className="icon">
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" className="icon">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+        </footer>
       </div>
     </>
   );
