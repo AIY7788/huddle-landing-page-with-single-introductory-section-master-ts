@@ -4,12 +4,16 @@ function App() {
   return (
     <>
       <div className="App">
-        <img src="/logo.svg" className="logo" alt="Logo" />
+        <img
+          src="/huddle-landing-page-with-single-introductory-section-master-ts/logo.svg"
+          className="logo"
+          alt="Logo"
+        />
 
         <main>
           <img
             className="hero"
-            src="/images/illustration-mockups.svg"
+            src="/huddle-landing-page-with-single-introductory-section-master-ts/images/illustration-mockups.svg"
             alt="Illustration Mockups"
           />
 
